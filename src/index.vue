@@ -444,6 +444,7 @@ export default {
 
       this.onChange && this.onChange(this.file, this.file.name);
       this.$emit("onChange", this.file, this.file.name);
+      this.$emit("emitDataUrl", this.dataUrl);
 
       this.imgPreview(this.file);
 
